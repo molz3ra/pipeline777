@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     const resultado = somar(10, 5); // Testando com 10 + 5
     res.send(`
         <body style="font-family: sans-serif; text-align: center; padding: 50px;">
-            <h1 style="color: #2ecc71;">🚀 Pipeline de Sucesso!</h1>
+            <h1 style="color: #5515a8;">🚀 Pipeline de Sucesso!</h1>
             <p>Seu servidor Node.js está rodando no Render.</p>
             <div style="background: #f4f4f4; padding: 20px; display: inline-block; border-radius: 10px;">
                 <strong>Teste da Função Soma:</strong> 10 + 5 = ${resultado}
