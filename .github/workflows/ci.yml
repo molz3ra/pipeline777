@@ -1,0 +1,24 @@
+name: Pipeline de Testes do Lucas
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  verificar-codigo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixando o código do Lucas
+        uses: actions/checkout@v4
+
+      - name: Instalando o Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalando as dependências (Jest)
+        run: npm install
+
+      - name: Rodando o teste automatizado
+        run: npm test
