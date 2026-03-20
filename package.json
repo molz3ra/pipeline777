@@ -16,5 +16,8 @@
     "eslint": "^10.1.0",
     "globals": "^17.4.0",
     "jest": "^30.3.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
